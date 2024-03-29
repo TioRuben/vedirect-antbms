@@ -27,23 +27,11 @@ endmenu
 
 menu "EmonCMS Configuration"
 
-    config EMONCMS_HOSTNAME
+    config EMONCMS_URL
         string "Server Hostname"
-        default "emoncms.org"
+        default "emoncms.org/input/post"
         help
-            The server hostname to make the requests.
-
-    config EMONCMS_PATH
-        string "EmonCMS post path"
-        default "/input/post"
-        help
-            The path to post the Emoncms Data.
-
-    config EMONCMS_PORT
-        string "Port"
-        default "443"
-        help
-            The EmonCMS web endpoint.
+            The Full URL of the Input API
 
     config EMONCMS_API_KEY
         string "API Key"
