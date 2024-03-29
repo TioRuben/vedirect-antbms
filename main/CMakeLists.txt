@@ -7,5 +7,5 @@ idf_component_register(SRCS
                       "bluetooth.c" 
                       "main.c"
                     INCLUDE_DIRS "."
-                    REQUIRES vedirect antbms
+                    REQUIRES vedirect antbms driver mbedtls freertos
                     PRIV_REQUIRES nvs_flash bt)
